@@ -6,8 +6,9 @@
     Background:azure;
 }
 
-a {
-    color: olive
+a, .navbar a {
+    color: olive;
+    padding:1rem
 }
 
 h1 {
