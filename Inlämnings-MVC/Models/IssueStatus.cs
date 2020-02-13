@@ -12,6 +12,5 @@ namespace Inlämnings_MVC.Models
 
         public string Status { get; set; }
 
-        public ICollection<Issue> Issue { get; set; }
     }
 }

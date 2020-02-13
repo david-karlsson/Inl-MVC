@@ -15,6 +15,8 @@ namespace Inlämnings_MVC.Models
 
         public string Description { get; set; }
 
+        public IssueStatus IssueStatus { get; set; }
+
         public Customer Customer { get; set; }
     }
 }

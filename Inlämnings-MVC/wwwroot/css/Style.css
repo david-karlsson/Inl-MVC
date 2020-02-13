@@ -7,7 +7,7 @@
 }
 
 a, .navbar a {
-    color: olive;
+    color: green;
     padding:1rem
 }
 
@@ -27,11 +27,26 @@ h3, h4 {
     margin-left: 0;
 }
 
-aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center
+
+    .sub-menu {
+        display: none;
+        list-style: none;
+        background:rgba(255,255,255,0.8);
+        border:1px dashed aliceblue
+
+    }
+
+.top-menu:hover .sub-menu {
+    display: inline;
+    position: absolute;
+    transform: translateX(-35%);
 }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
     aside ul {
         margin-right: 5rem;
@@ -44,7 +59,7 @@ aside {
     aside li {
         list-style: none;
         border-bottom: 1px dotted cadetblue;
-        border-left: 5px groove olive;
+        border-left: 5px groove green;
         font-size: 1.3rem;
         padding: 1.5rem;
     }
@@ -55,7 +70,9 @@ aside {
             content: '\2717';
         }
 
-
+        .bnt{
+            background:crimson!important
+        }
 
 
 .side-heading {

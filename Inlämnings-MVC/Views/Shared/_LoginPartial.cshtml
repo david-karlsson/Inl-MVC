@@ -13,9 +13,16 @@
                 <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Index">Customers</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item top-menu">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Issues" asp-action="Index">Issues</a>
+                <ul class="sub-menu">
+                    <li>
+                        <a class="nav-link text-dark" asp-area="" asp-controller="IssueStatus" asp-action="Index">Add/Modify Status-types</a>
+                    </li>
+                </ul>
             </li>
+
+           
             <li class="nav-item">
                 <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
                     <button type="submit" class="nav-link btn-dark text-light">Logout</button>
@@ -28,7 +35,7 @@
                 <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-light btn-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                <a class="nav-link text-light btn-danger" asp-area="Identity" asp-page="/Account/Login">Login</a>
             </li>
         }
     </ul>
