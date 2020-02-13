@@ -11,9 +11,11 @@ namespace Inlämnings_MVC.Models
 
         public int CustomerID { get; set; }
 
-        public string CustomerName { get; set; }
+
 
         public string Description { get; set; }
+
+
 
         public IssueStatus IssueStatus { get; set; }
 

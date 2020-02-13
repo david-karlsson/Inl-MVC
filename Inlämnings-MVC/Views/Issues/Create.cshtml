@@ -23,11 +23,16 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="CustomerName" class="control-label"></label>
-                <input asp-for="CustomerName" class="form-control" />
-                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                <label asp-for="Customer.CustomerName" class="control-label"></label>
+                <input asp-for="Customer.CustomerName" class="form-control" />
+                <span asp-validation-for="Customer.CustomerName" class="text-danger"></span>
             </div>
 
+            <div class="form-group">
+                <label asp-for="IssueStatus.Status" class="control-label"></label>
+                <input asp-for="IssueStatus.Status" class="form-control" />
+                <span asp-validation-for="IssueStatus.Status" class="text-danger"></span>
+            </div>
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-danger" />
